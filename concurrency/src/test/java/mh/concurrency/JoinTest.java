@@ -39,7 +39,7 @@ public class JoinTest {
             try {
                 TimeUnit.SECONDS.sleep(sleepInSeconds);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                e.printStackTrace(System.out);
             }
         }
     }

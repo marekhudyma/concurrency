@@ -15,7 +15,7 @@ public class Consumer implements Runnable{
             while(true) {
                 String element = queue.take(); //blocks
                 System.out.println("Consumer take " + element);
-                Thread.sleep(2000);
+                Thread.sleep(100);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

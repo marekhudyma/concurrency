@@ -12,10 +12,10 @@ public class Producer implements Runnable{
 
     public void run() {
         try {
-            for(int i=0; i<100; i++) {
+            for(int i=0; i<20; i++) {
                 System.out.println("Producer: put " + String.valueOf(i));
                 queue.put(String.valueOf(i));
-                Thread.sleep(i*100);
+                Thread.sleep(i*20);
             }
 
         } catch (InterruptedException e) {

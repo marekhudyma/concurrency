@@ -20,7 +20,7 @@ public class BlockingQueueTest {
         new Thread(producer).start();
         new Thread(consumer).start();
 
-        Thread.sleep(200* 1000);
+        Thread.sleep(20 * 1000);
         System.out.println("End of time");
 
     }
